@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Herança2023
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //criar um objeto pesssoa fisica
+            PessoaFisica objPF = new PessoaFisica();
+
+            if (objPF.CadastrarNome("Wagner"))
+            {
+                Console.WriteLine("Nome cadastrado com sucesso!");
+                objPF.ConsultarNome();
+            }
+            else
+            {
+                Console.WriteLine("O nome deve ter nome e sobrenome");
+            }
+            
+
+            //Objeto Pessoa Juridica
+
+            PessoaJuridica objPJ = new PessoaJuridica();
+            objPJ.CadastrarNome("Etec");
+            objPJ.ConsultarNome();
+            
+        }
+    }
+}
