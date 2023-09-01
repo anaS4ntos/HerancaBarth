@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Herança2023
+{
+    class PessoaJuridica:Pessoa
+    {
+        public string CNPJ { get; set; }
+
+        public override bool CadastrarNome(string Nome)
+        { 
+        
+            this.Nome = Nome;
+            return true;
+        }
+           
+        public override void ConsultarNome()
+
+        {
+            Console.WriteLine($"O nome da sua empresa é: {this.Nome}");
+        }
+
+    }
+}
