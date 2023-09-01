@@ -1,0 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Herança2023
+{
+    class PessoaFisica:Pessoa
+    {
+        public int CPF { get; set; }
+    }
+}
